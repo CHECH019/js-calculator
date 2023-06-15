@@ -1,0 +1,75 @@
+body{
+    background-color: #333;
+}
+div{
+    box-sizing: border-box;
+}
+.calc{
+    margin: 100px auto;
+    width: 320px;
+    height: 500px;
+    padding: 5px;
+    background-color: #222;
+}
+.display{
+    height: 30%;
+    padding: 5px;
+    color: #fafafa;
+}
+.buttons{
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 2px;
+}
+.button{
+    background-color: #555;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    cursor:default;
+    border-radius: 5px;
+}
+.button:nth-child(10){
+    grid-column-start: 2;
+}
+.button:nth-child(11){
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+.button:nth-child(12){
+    grid-column: 3 ;
+    grid-row-start: 5;
+}
+.button:nth-child(13){
+    grid-row-start: 1;
+    grid-column-start: 4;
+}
+.button:nth-child(14){
+    grid-row-start: 2;
+    grid-column-start: 4;
+}
+.button:nth-child(15){
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
+.button:nth-child(16){
+    grid-row: 4 / span 2;
+    grid-column-start: 4;
+}
+.button:nth-child(17){
+    grid-row-start: 1;
+    grid-column: 1 / span 2;
+}
+.button:nth-child(18){
+    grid-row-start: 1;
+    
+}
+.hover-style:hover{
+    background-color: #666;
+}
+.onButtonPressed{
+    background-color: #777;
+}
