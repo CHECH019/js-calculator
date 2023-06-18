@@ -3,6 +3,7 @@ body{
 }
 div{
     box-sizing: border-box;
+    user-select: none;
 }
 .calc{
     margin: 12.5vh auto;
@@ -88,7 +89,7 @@ div{
     grid-row-start: 1;
     
 }
-.hover-style:hover{
+.hover:hover{
     background-color: #666;
 }
 .onButtonPressed{
